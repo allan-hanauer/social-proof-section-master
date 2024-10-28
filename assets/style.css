@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primary-font: "League Spartan";
+  --clr-primary-1: hsl(300, 43%, 22%);
+  --clr-primary-2: hsl(333, 80%, 67%);
+  --clr-neutral-1: hsl(303, 10%, 53%);
+  --clr-neutral-2: hsl(300, 24%, 96%);
+  --clr-neutral-3: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--clr-neutral-3);
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+/* ####### CONTAIN TOP ##########*/
+.contain__top {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.contain__info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contain__info__title {
+  font-size: 3rem;
+  color: var(--clr-primary-1);
+}
+.contain__info__describe {
+  color: var(--clr-neutral-1);
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+.contain__rated-dynamic {
+  display: flex;
+  width: 550px;
+  flex-direction: column;
+  gap: 15px;
+}
+.contain__rated {
+  padding: 0px 30px;
+  background-color: var(--clr-neutral-2);
+  color: var(--clr-primary-1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  height: 55px;
+  width: 445px;
+}
+.contain__rated__name {
+  margin-left: 30px;
+}
+.contain__rated__star {
+  width: 15px;
+  height: 15px;
+}
+.contain__rated__stars {
+  display: flex;
+  gap: 5px;
+}
+.contain__rated__name {
+  color: var(--clr-primary-1);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.contain__rated-0 {
+  margin-left: 0px;
+}
+.contain__rated-1 {
+  margin-left: 48px;
+}
+.contain__rated-2 {
+  margin-left: 94px;
+}
+
+/* ######### CONTAIN BOTTOM ##########*/
+.contain__bottom-dynamic {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contain__card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-primary-1);
+  color: var(--clr-neutral-3);
+  width: 350px;
+  border-radius: 5px;
+  height: 235px;
+  padding: 30px;
+  gap: 30px;
+}
+.contain__comment__describe {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.contain__comment__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.contain__comment__name {
+  font-size: 1rem;
+  color: var(--clr-neutral-2);
+}
+.contain__comment__verify {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--clr-primary-2);
+}
+.contain__comment__text {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: var(--clr-neutral-2);
+}
+.contain__card-1 {
+  margin-top: 16px;
+}
+.contain__card-2 {
+  margin-top: 32px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  color: var(--clr-primary-1);
+}
+footer a {
+  text-decoration: none;
+  color: var(--clr-primary-2);
+}
+@media screen and (max-width: 1090px) {
+  body {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contain__top {
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contain__rated-dynamic {
+    width: 402px;
+  }
+  .contain__rated {
+    margin: 0;
+    width: 100%;
+  }
+  .contain__bottom-dynamic {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .contain__card {
+    margin: 0;
+  }
+  footer {
+    position: relative;
+  }
+}
