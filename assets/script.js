@@ -1,10 +1,10 @@
 const fetchRated = async () => {
-  const res = await fetch("./assets/rated.json");
+  const res = await fetch("/social-proof-section-master/assets/rated.json");
   const data = await res.json();
   return data;
 };
 const fetchComment = async () => {
-  const res = await fetch("./assets/comment.json");
+  const res = await fetch("/social-proof-section-master/assets/comment.json");
   const data = await res.json();
   return data;
 };
@@ -21,7 +21,7 @@ fetchRated()
       for (let i = 0; i < e.stars; i++) {
         const star = document.createElement("img");
         star.classList.add("contain__rated__star");
-        star.setAttribute("src", "./assets/images/icon-star.svg");
+        star.setAttribute("src", "/social-proof-section-master/assets/images/icon-star.svg");
         star.setAttribute("alt", "icon-star");
         spanStars.appendChild(star);
       }
